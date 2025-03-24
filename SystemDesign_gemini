@@ -1,0 +1,53 @@
+What is System Design?
+
+Imagine you're building a city. System design is like creating the blueprint for that city. It's about planning how all the different parts of a software system will work together. This includes:
+
+What the system needs to do: (Like, "people need to get from home to work.")
+How it will handle lots of people: (Like, "we need roads, buses, and trains.")
+How it will store information: (Like, "we need libraries and databases.")
+How it will stay working even if something breaks: (Like, "we need backup power and emergency services.")
+In simple terms, system design is about making sure a software system can do its job efficiently, reliably, and can grow as needed.
+
+Scalability Basics
+
+Now, let's say your city suddenly gets a lot more residents. Scalability is about how well your city (or software system) can handle that increase. In software, it means:
+
+Being able to handle more users.
+Being able to process more data.
+Being able to keep working even when things get busy.
+Horizontal vs. Vertical Scaling
+
+There are two main ways to make your system more scalable:
+
+Vertical Scaling (Scaling Up):
+Think of this as upgrading a single building. Instead of building more houses, you add more floors to an existing apartment building.
+In software, this means adding more power to a single server. You might add more RAM, a faster CPU, or more storage.
+Pros:
+Simpler to implement initially.
+Easier to manage.
+Cons:
+There's a limit to how much you can upgrade a single server. You'll eventually hit a wall.
+If that one server fails, the whole system goes down.
+Cost can increase exponentially as you add more resources to one machine.
+Horizontal Scaling (Scaling Out):
+Think of this as building more houses. Instead of making one building taller, you build more buildings next to it.
+In software, this means adding more servers to your system. You distribute the workload across multiple machines.
+Pros:
+Virtually limitless scalability. You can keep adding servers as needed.
+Better fault tolerance. If one server fails, the others can keep working.
+Cost can be more efficient, by adding more commodity hardware.
+Cons:
+More complex to implement. You need to manage multiple servers.
+Requires load balancing to distribute traffic.
+Data consistency can be more challenging.
+In essence:
+
+Vertical scaling: Makes one thing stronger.
+Horizontal scaling: Adds more things.
+Example:
+
+Imagine a website that sells tickets.
+If they use vertical scaling, they might upgrade their main server to handle more traffic.
+If they use horizontal scaling, they might add more servers and use a load balancer to distribute the ticket requests.
+
+
